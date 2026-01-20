@@ -90,9 +90,9 @@ export default function Dashboard() {
     };
 
     const getConcernIcon = (level) => {
-        if (level === 'high') return '●';
-        if (level === 'medium') return '●';
-        return '●';
+        if (level === 'high') return '🔴';
+        if (level === 'medium') return '🟡';
+        return '🟢';
     };
 
     return (
@@ -168,10 +168,10 @@ export default function Dashboard() {
 
                         {/* Overall Summary */}
                         <div style={{ background: '#f9fafb', padding: '20px', borderRadius: '8px', marginBottom: '20px' }}>
-                            <h4 style={{ marginBottom: '10px' }}>Summary</h4>
+                            <h4 style={{ marginBottom: '10px' }}>📊 Summary</h4>
                             <p style={{ lineHeight: '1.6', marginBottom: '15px' }}>{aiInsights.overall_summary}</p>
 
-                            <h4 style={{ marginBottom: '10px' }}>Key Action Items</h4>
+                            <h4 style={{ marginBottom: '10px' }}>⚡ Key Action Items</h4>
                             <ul style={{ paddingLeft: '20px', lineHeight: '1.8' }}>
                                 {aiInsights.key_action_items.map((item, idx) => (
                                     <li key={idx}>{item}</li>
@@ -182,7 +182,7 @@ export default function Dashboard() {
                         {/* Spending Analysis */}
                         {aiInsights.spending_analysis && aiInsights.spending_analysis.length > 0 && (
                             <div style={{ marginBottom: '20px' }}>
-                                <h4 style={{ marginBottom: '15px' }}>Spending Analysis</h4>
+                                <h4 style={{ marginBottom: '15px' }}>💸 Spending Analysis</h4>
                                 <div className="grid grid-2">
                                     {aiInsights.spending_analysis.map((analysis, idx) => (
                                         <div key={idx} style={{
@@ -211,7 +211,7 @@ export default function Dashboard() {
                         {/* Savings Recommendations */}
                         {aiInsights.savings_recommendations && aiInsights.savings_recommendations.length > 0 && (
                             <div style={{ marginBottom: '20px' }}>
-                                <h4 style={{ marginBottom: '15px' }}>Savings Recommendations</h4>
+                                <h4 style={{ marginBottom: '15px' }}>💰 Savings Recommendations</h4>
                                 <div style={{ background: '#10b981', color: 'white', padding: '15px', borderRadius: '8px', marginBottom: '15px', textAlign: 'center' }}>
                                     <div style={{ fontSize: '28px', fontWeight: '700' }}>
                                         ${aiInsights.total_potential_savings.toFixed(2)}/month
@@ -243,7 +243,7 @@ export default function Dashboard() {
                                             </div>
                                         </div>
                                         <div style={{ borderTop: '1px solid #e5e7eb', paddingTop: '10px' }}>
-                                            <strong style={{ fontSize: '14px' }}>Tips:</strong>
+                                            <strong style={{ fontSize: '14px' }}>💡 Tips:</strong>
                                             <ul style={{ paddingLeft: '20px', marginTop: '8px', lineHeight: '1.8' }}>
                                                 {rec.actionable_tips.map((tip, tipIdx) => (
                                                     <li key={tipIdx} style={{ fontSize: '14px' }}>{tip}</li>
@@ -258,7 +258,7 @@ export default function Dashboard() {
                         {/* Investment Suggestions */}
                         {aiInsights.investment_suggestions && aiInsights.investment_suggestions.length > 0 && (
                             <div style={{ marginBottom: '20px' }}>
-                                <h4 style={{ marginBottom: '15px' }}>Investment Suggestions</h4>
+                                <h4 style={{ marginBottom: '15px' }}>📈 Investment Suggestions</h4>
                                 {aiInsights.investment_suggestions.map((inv, idx) => (
                                     <div key={idx} style={{
                                         background: inv.priority === 'high' ? '#fef3c7' : '#f9fafb',

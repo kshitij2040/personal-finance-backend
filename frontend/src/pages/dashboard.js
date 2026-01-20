@@ -86,7 +86,7 @@ export default function DashboardPage() {
 
             <div className="container">
                 <h1 style={{ color: 'white', marginBottom: '30px', fontSize: '36px' }}>
-                    Your Financial Dashboard
+                    📊 Your Financial Dashboard
                 </h1>
 
                 {/* Dashboard Overview with Charts */}

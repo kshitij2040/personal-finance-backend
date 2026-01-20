@@ -17,7 +17,7 @@ export default function Home() {
             <div className="container">
                 <div className="card" style={{ textAlign: 'center', maxWidth: '800px', margin: '0 auto' }}>
                     <h1 style={{ fontSize: '48px', marginBottom: '20px', color: '#6366f1' }}>
-                        Welcome to AI Finance Pencil
+                        Welcome to AI Finance Pencil 💰
                     </h1>
                     <p style={{ fontSize: '20px', color: '#6b7280', marginBottom: '30px' }}>
                         Your smart budget tracking companion powered by Google Gemini AI
@@ -27,12 +27,12 @@ export default function Home() {
                         <h2 style={{ color: '#1f2937', marginBottom: '20px' }}>Features</h2>
                         <div className="grid grid-3">
                             <div style={featureCard}>
-                                <div style={{ fontSize: '48px', marginBottom: '10px' }}>Stats</div>
+                                <div style={{ fontSize: '48px', marginBottom: '10px' }}>📊</div>
                                 <h3>Track Finances</h3>
                                 <p style={{ color: '#6b7280' }}>Monitor income and expenses with ease</p>
                             </div>
                             <div style={featureCard}>
-                                <div style={{ fontSize: '48px', marginBottom: '10px' }}>Insights</div>
+                                <div style={{ fontSize: '48px', marginBottom: '10px' }}>📈</div>
                                 <h3>Visual Reports</h3>
                                 <p style={{ color: '#6b7280' }}>Beautiful charts and analytics</p>
                             </div>

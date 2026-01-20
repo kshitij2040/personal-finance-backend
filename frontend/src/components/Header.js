@@ -5,7 +5,7 @@ export default function Header() {
     return (
         <header style={styles.header}>
             <div className="container" style={styles.container}>
-                <h1 style={styles.title}>AI Finance Pencil</h1>
+                <h1 style={styles.title}>💰 AI Finance Pencil</h1>
                 <nav style={styles.nav}>
                     <a href="/" style={styles.link}>Home</a>
                     <a href="/dashboard" style={styles.link}>Dashboard</a>
