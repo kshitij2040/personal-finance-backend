@@ -45,6 +45,7 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:3000",
+    "https://personal-finance-xi-lake.vercel.app",
 ]
 
 # Add your frontend domain from environment variable
@@ -52,6 +53,7 @@ if 'FRONTEND_URL' in os.environ:
     CORS_ALLOWED_ORIGINS.append(os.environ['FRONTEND_URL'])
 
 CORS_ALLOW_CREDENTIALS = True
+CORS_ALLOW_ALL_ORIGINS = False
 
 # Google Gemini API Key from environment
 GEMINI_API_KEY = os.environ.get('GEMINI_API_KEY', GEMINI_API_KEY)
